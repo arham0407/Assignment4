@@ -128,7 +128,7 @@ void LoadFileToMemory(List<Client> clientList)
   {
     try
     {
-			string fileName = "clientDetails.csv";
+			string fileName = "client.csv";
 			string filePath = $"./data/{fileName}";
 			if (!File.Exists(filePath))
 				throw new Exception($"The file {fileName} does not exist.");
@@ -151,7 +151,7 @@ void LoadFileToMemory(List<Client> clientList)
 }
 
 void SaveClients() {
-      string fileName = "clientDetails.csv";
+      string fileName = "client.csv";
       string filePath = $"./data/{fileName}";
       List<String> ClientRecords = [];
       foreach(Client data in clientList) {
